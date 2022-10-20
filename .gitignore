@@ -1,0 +1,17 @@
+.env
+# Lock
+yarn.lock
+package-lock.json
+yarn-error.log
+
+build/
+
+.history
+.DS_STORE
+.DS_Store
+
+.idea
+
+
+# Dependency directories
+node_modules/

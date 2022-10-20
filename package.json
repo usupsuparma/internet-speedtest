@@ -1,0 +1,23 @@
+{
+  "name": "speed-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start:pm2": "pm2 start app.js",
+    "queue": "node ./src/queue/job-queue.js",
+    "start:pm": "pm2 start ./src/queue/job-queue.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bull": "^4.10.1",
+    "dotenv": "^16.0.3",
+    "fast-speedtest-api": "^0.3.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.2"
+  }
+}
